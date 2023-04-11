@@ -1,3 +1,24 @@
+.about{
+  padding: 15rem 0;
+  background-color: white;
+  position: relative;
+  height:60vh;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // justify-content: center;
+  // align-items: center;
+  .text-zone{
+    h1 {
+      color: Black;
+    }
+    p{
+      color: Black;
+      font-size: 15px;
+      // margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 600;
+    }
+  }
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -23,7 +44,7 @@
     width: 200px;
     height: 200px;
     border: 1px solid #000000;
-    background: rgba(126, 126, 126, 0.4);
+    background: rgb(255, 255, 255);
     text-align: center;
     font-size: 100px;
     display: flex;
@@ -71,7 +92,7 @@
     transform: rotateY(-270deg) rotateX(90deg);
   }
 }
-
+}
 
 // .stage-cube-cont {
 //   width: 50%;

@@ -21,7 +21,8 @@ const About = () => {
   }, [])
 
   return (
-    // <>
+    <>
+    <section className="about" id="about">
       <div className="container about-page">
          <div className="text-zone">
            <h1>
@@ -63,8 +64,9 @@ const About = () => {
            </div>
          </div>   
       </div>
- //      <Loader type="pacman" />
- //    </>
+      </section>
+ {/* //      <Loader type="pacman" /> */}
+    </>
   )
 }
 
