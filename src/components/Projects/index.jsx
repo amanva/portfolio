@@ -1,4 +1,8 @@
 import Adder from '../Adder'
+import {Adder2} from '../Adder'
+import frage from '../../assets/images/frage.png'
+
+
 import './index.scss'
 
 function Projects() {
@@ -15,6 +19,13 @@ function Projects() {
                 desc="A 2D platformer game made using Javascript, HTML, and CSS. This game features a mage who must journey through various levels and defeat the evil that has consumed the world."
                 git = "https://github.com/amanva/The-Last-Magus"
                 web = "https://amanva.github.io/The-Last-Magus/"
+                />
+                <Adder2 
+                title="as"
+                desc="A 2D platformer game made using Javascript, HTML, and CSS. This game features a mage who must journey through various levels and defeat the evil that has consumed the world."
+                git = "https://github.com/amanva/The-Last-Magus"
+                web = "https://amanva.github.io/The-Last-Magus/"
+                imgLink = {frage}
                 />
               </div>
             </div>

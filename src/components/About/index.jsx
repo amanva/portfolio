@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Work from '../../assets/images/person.png'
 
 // import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -21,14 +20,14 @@ const About = () => {
     <div className="container">
       <div className = "aboutPage">
         <div className="image">
-          <img className = "avatar"src = {Work} alt = "pers"/>
+
 
         </div>
          <div className="text-zone">
            <h1>
              <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', 'm', 'e']}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
             />
           </h1>

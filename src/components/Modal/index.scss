@@ -1,0 +1,137 @@
+
+.outerModal{
+  width: 30vw;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // border:red 3px solid;
+    border-radius: 1rem;
+
+    
+}
+
+.closeButton{
+  // position: absolute;
+  // top: 10px;
+  display: flex;
+  // float: right;
+  justify-content: flex-end;
+}
+.closeButton button{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.contact-form {
+    // width: 100%;
+    // margin-top: 20px;
+    
+  
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 1s;
+        animation-fill-mode: forwards;
+        
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 1;
+      background: white;
+      height: 50px;
+      font-size: 16px;
+      color: black;
+      padding: 0 20px;
+      box-sizing: border-box;
+      
+    }
+    input::placeholder {
+      color: black;
+      opacity: 1;
+    }
+    textarea {
+      width: 100%;
+      border: 1;
+      background: white;
+      height: 50px;
+      font-size: 16px;
+      color: black;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+    textarea::placeholder{
+      color: black;
+      opacity: 1;
+    }
+  
+    .flat-button {
+      color: #00e1ff;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #00e1ff;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+      &:hover {
+        background: #00e1ff;
+        color: #333;
+      }
+    }
+    button{
+      color: #00e1ff;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #00e1ff;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      text-align: center;
+      &:hover {
+        background: #00e1ff;
+        color: #333;
+      }
+    }
+  }

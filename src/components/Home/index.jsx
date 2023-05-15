@@ -51,11 +51,6 @@ const Home = () => {
       <Logo />
         <div className="text-zone">
           <h1>
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
