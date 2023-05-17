@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -46,4 +45,44 @@ function Adder({title, desc, git, web}){
 
 }
 
+function Adder2({title, desc, git, web, imgLink}){
+  return (
+      <>
+      <div className="AdderWrap">
+      <div className="vid">
+      <img src= {imgLink} alt="React Image" />
+      </div>
+      <div className="texts">
+      <h1>
+          {title}
+        </h1>
+        <p>{desc}</p>
+        <div className="link">
+          <a target="_blank" href={git} rel="noreferrer">
+            Source <FontAwesomeIcon
+            icon={faGithub}
+            color="#4d4d4e"
+            className="anchor-icon"
+          />
+          </a>
+          <a target="_blank" href={web} rel="noreferrer">
+            Demo
+            <FontAwesomeIcon
+            icon={faExternalLink}
+            color="#4d4d4e"
+            className="anchor-icon"
+          />
+          </a>
+        </div>
+      </div>
+      </div>
+      
+      </>
+
+
+  )
+
+
+}
 export default Adder;
+export {Adder2};

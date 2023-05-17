@@ -7,17 +7,14 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { Link } from 'react-router-dom'
-// import Loader from 'react-loaders'
+import LogoA from '../../assets/images/logoAVblank.png'
 import AnimatedLetters from '../AnimatedLetters'
-// import LogoTitle from '../../assets/images/logoAVblank.png'
-import Logo from './Logo'
 import './index.scss'
+import BallHolder from "../BallHolder"
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
-  const nameArray = ['', 'A', 'm', 'a', 'n']
+  
   const jobArray = [
     's',
     'o',
@@ -48,14 +45,10 @@ const Home = () => {
    <>
 <section id ="home" className = "homepage">
       <div className="container">
-      <Logo />
+        <div className="homeComp">
+          <div className="noSkill">
         <div className="text-zone">
           <h1>
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
@@ -64,23 +57,21 @@ const Home = () => {
             </h1>
             <br />
             <h2>
-            {/* <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            /> */}
-            Hi, I'm Aman Vahora, a very passionate software engineer
+            Hi, I'm Aman Vahora, a very passionate software engineer from Seattle, Washington
           </h2>
-          
-          {/* <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link> */}
-          <div className = "skills">
+          </div>
+          <div className="logoImage">
+      <img
+        className="solid-logo"
+        src={LogoA}
+        alt="dev"
+      />
+      </div>
+        </div>
+        <div className = "skills">
           <p>Skills</p>
-        </div>
-        </div>
         
-        <div className="stage-cube-cont">
+        {/* <div className="stage-cube-cont">
            <div className="cubespinner">
            <div className="face1">
                <FontAwesomeIcon icon={faJava} color="#F06529" />
@@ -98,7 +89,12 @@ const Home = () => {
                <FontAwesomeIcon icon={faJs} color="#EFD81D" />
              </div>
            </div>
-         </div>   
+           </div> */}
+         </div>  
+      </div>
+      <div className="circles">
+         <BallHolder />
+          </div> 
       </div>
       </section>
     </>

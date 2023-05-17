@@ -4,11 +4,21 @@ import { useEffect, useState } from 'react'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import Modal from '../Modal'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLocation,
+  faPhone,
+  faEnvelope,
+  faArrowPointer
+} from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
+  
   const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+  const [openForm, setOpenForm] = useState(false);
+  // const form = useRef()
 
   useEffect(() => {
      setTimeout(() => {
@@ -16,30 +26,32 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  const sendEmail = (e) => {
-    e.preventDefault()
+  // const sendEmail = (e) => {
+  //   e.preventDefault()
 
-    emailjs
-      .sendForm('service_ridtmf8', 'template_b7r8ozj', form.current, 'ufoXBbzzKRbp_MTeY')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
+  //   emailjs
+  //     .sendForm('service_ridtmf8', 'template_b7r8ozj', form.current, 'ufoXBbzzKRbp_MTeY')
+  //     .then(
+  //       () => {
+  //         alert('Message successfully sent!')
+  //         window.location.reload(false)
+  //       },
+  //       () => {
+  //         alert('Failed to send the message, please try again')
+  //       }
+  //     )
+  // }
 
   return (
     <>
-      <div className="container contact-page">
-        <div className="text-zone">
+    <section id="contact" className="contact">
+    <div className="container">
+      <div className="contact-info">
+        <div className="contact-head">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={['C','o', 'n', 't', 'a', 'c', 't','', 'm', 'e']}
               idx={15}
             />
           </h1>
@@ -47,63 +59,49 @@ const Contact = () => {
             I am looking for software engineering positions. If you want to get in contact with me or have any requests or
             questions, don't hesitate to contact me using the form underneath.
           </p>
-          <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
-            </form>
           </div>
-        </div>
-        {/* <div className="info-map">
-          Slobodan Gajić,
-          <br />
-          Serbia,
-          <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div> */}
+          <div className='contact-icons'>
+            <div className='contact-sepIcon'>
+            <span className='inner'>
+            <FontAwesomeIcon className = "icon" icon={faLocation} color="#4d4d4e" />
+            </span>
+            <div className='contact-text'>
+            <h1>Location</h1>
+            <p>Seattle, Washington</p>
+            </div>
+            </div>
+            <div className='contact-sepIcon'>
+            <span className='inner'>
+            <FontAwesomeIcon className = "icon" icon={faPhone} color="#4d4d4e" />
+            </span>
+            <div className='contact-text'>
+            <h1>Phone</h1>
+            <p>+1 206-504-0268</p>
+            </div>
+            </div>
+            <div className='contact-clickIcon'>
+            <span className="outerSpan">
+            <span className='inner'>
+            <FontAwesomeIcon className = "hand" icon={faArrowPointer} color="#4d4d4e" />
+            <FontAwesomeIcon className = "icon" icon={faEnvelope} onClick={() => {
+        setOpenForm(true);
+      }}>
+      </FontAwesomeIcon>
+      
+            </span>
+            </span>
+            <div className='contact-text'>
+            <h1>Email</h1>
+            <p>Amanvahora4@gmail.com</p>
+            </div>
+            </div>
+          </div>
+          {openForm && <Modal setCloseModal={setOpenForm}/>}
       </div>
-      {/* <Loader type="pacman" /> */}
+      </div>
+      </section>
     </>
+    
   )
 }
 

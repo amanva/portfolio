@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Work from '../../assets/images/person.png'
-
+import Soft from '../../assets/images/soft.svg'
+import Sport from '../../assets/images/sports-tools.jpg'
 // import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -21,14 +22,19 @@ const About = () => {
     <div className="container">
       <div className = "aboutPage">
         <div className="image">
+        
+          <span>
+          <img className = "soft-svg"src={Soft} alt="text" />
+          </span>
           <img className = "avatar"src = {Work} alt = "pers"/>
-
+          <img src={Sport} className="sport" />
+          
         </div>
          <div className="text-zone">
            <h1>
              <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', 'm', 'e']}
+              strArray={['A', 'b', 'o', 'u', 't',' ',  'm', 'e']}
               idx={15}
             />
           </h1>
@@ -47,7 +53,6 @@ const About = () => {
         </div>
       </div>
       </section>
- {/* //      <Loader type="pacman" /> */}
     </>
   )
 }
