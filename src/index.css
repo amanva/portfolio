@@ -13,18 +13,13 @@ html {
   max-width: 105rem;
   margin: 0 auto;
   padding: 0 2rem;
-  /* height: auto; */
 }
-/* ::-webkit-scrollbar {
-  width: 8px;
-  width: 8px;
-} */
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #8e8e8e #ffffff;
 }
 
-/* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   width: 8px;
   width: 8px;

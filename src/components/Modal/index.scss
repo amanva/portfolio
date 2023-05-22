@@ -73,13 +73,12 @@
           margin: 0;
           list-style: none;
           margin-bottom: 10px;
-          opacity: 0;
           overflow: hidden;
           display: block;
           clear: both;
           position: relative;
           animation: fadeInUp 2s 1s;
-          animation-fill-mode: forwards;
+          animation-fill-mode: backwards;
           
         }
     
@@ -111,9 +110,10 @@
         color: black;
         opacity: 1;
       }
+     
       textarea {
         width: 100%;
-        border: 1;
+        // border: 1;
         background: white;
         height: 50px;
         font-size: 16px;
