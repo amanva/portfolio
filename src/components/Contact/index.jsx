@@ -63,7 +63,7 @@ const Contact = () => {
           <div className='contact-icons'>
             <div className='contact-sepIcon'>
             <span className='inner'>
-            <FontAwesomeIcon className = "icon" icon={faLocation} color="#4d4d4e" />
+            <FontAwesomeIcon className = "icon" icon={faLocation}  />
             </span>
             <div className='contact-text'>
             <h1>Location</h1>
@@ -72,7 +72,7 @@ const Contact = () => {
             </div>
             <div className='contact-sepIcon'>
             <span className='inner'>
-            <FontAwesomeIcon className = "icon" icon={faPhone} color="#4d4d4e" />
+            <FontAwesomeIcon className = "icon" icon={faPhone}  />
             </span>
             <div className='contact-text'>
             <h1>Phone</h1>
@@ -82,7 +82,7 @@ const Contact = () => {
             <div className='contact-clickIcon'>
             <span className="outerSpan">
             <span className='inner'>
-            <FontAwesomeIcon className = "hand" icon={faArrowPointer} color="#4d4d4e" />
+            <FontAwesomeIcon className = "hand" icon={faArrowPointer} />
             <FontAwesomeIcon className = "icon" icon={faEnvelope} onClick={() => {
         setOpenForm(true);
       }}>
