@@ -5,6 +5,9 @@ import {
 import {
     faExternalLink
   } from '@fortawesome/free-solid-svg-icons'
+import './index.scss'
+
+
 function Adder({title, desc, git, web}){
     return (
         <>
@@ -18,6 +21,7 @@ function Adder({title, desc, git, web}){
           </h1>
           <p>{desc}</p>
           <div className="link">
+            <div className="sourceLink">
             <a target="_blank" href={git} rel="noreferrer">
               Source <FontAwesomeIcon
               icon={faGithub}
@@ -25,6 +29,8 @@ function Adder({title, desc, git, web}){
               className="anchor-icon"
             />
             </a>
+            </div>
+            <div className="demoLink">
             <a target="_blank" href={web} rel="noreferrer">
               Demo
               <FontAwesomeIcon
@@ -33,6 +39,7 @@ function Adder({title, desc, git, web}){
               className="anchor-icon"
             />
             </a>
+            </div>
           </div>
         </div>
         </div>
@@ -58,6 +65,7 @@ function Adder2({title, desc, git, web, imgLink}){
         </h1>
         <p>{desc}</p>
         <div className="link">
+        <div className="sourceLink">
           <a target="_blank" href={git} rel="noreferrer">
             Source <FontAwesomeIcon
             icon={faGithub}
@@ -65,6 +73,8 @@ function Adder2({title, desc, git, web, imgLink}){
             className="anchor-icon"
           />
           </a>
+          </div>
+          <div className="demoLink">
           <a target="_blank" href={web} rel="noreferrer">
             Demo
             <FontAwesomeIcon
@@ -73,6 +83,7 @@ function Adder2({title, desc, git, web, imgLink}){
             className="anchor-icon"
           />
           </a>
+          </div>
         </div>
       </div>
       </div>

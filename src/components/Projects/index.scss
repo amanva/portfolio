@@ -62,7 +62,7 @@ gap: 5rem;
     }
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
     }
 }
 
@@ -72,7 +72,6 @@ gap: 5rem;
     height: auto;
     flex-direction: column;
     text-align: center;
-    // justify-content: center;
 }
 h1{
   font-size: 15px;
@@ -95,6 +94,19 @@ margin-top: 6rem;
 gap: 2rem;
 align-items: center;
 
+.sourceLink:hover{
+  .anchor-icon, a {
+  color: #33a18a;
+  transition: all 0.3s;
+  }
+}
+.demoLink:hover{
+  .anchor-icon, a {
+  color: #33a18a;
+  transition: all 0.3s;
+  }
+}
+
 a {
   font-size: 25px;
   color: black;
@@ -103,15 +115,11 @@ a {
   display: flex;
   align-items: center;
   gap: 3px;
-
   .anchor-icon{
     font-size: 30px;
   }
-  &:hover {
-    color: rgb(0, 255, 213);
-    transition: all 0.3s;
-  }
 }
+
 }
 }
 }

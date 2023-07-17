@@ -1,6 +1,7 @@
 import Adder from '../Adder'
 import {Adder2} from '../Adder'
 import frage from '../../assets/images/frage.png'
+import animal from '../../assets/images/animal.jpg'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -41,6 +42,13 @@ function Projects() {
                 git = "https://github.com/amanva/Mini_Game"
                 web = "https://amanva.github.io/Mini_Game/"
                 imgLink = {frage}
+                />
+                <Adder2 
+                title="Trivia Maze"
+                desc="A trivia maze where the user must navigate a maze and answer questions when prompted. The maze is generated randomly in which the exit is hidden."
+                git = "https://github.com/amanva/Trivia_Maze_Game"
+                web = "https://github.com/amanva/Trivia_Maze_Game"
+                imgLink = {animal}
                 />
               </div>
             </div>

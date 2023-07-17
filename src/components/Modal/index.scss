@@ -128,12 +128,12 @@
       }
     
       .flat-button {
-        color: #00e1ff;
+        color: #00a2ff;
         font-size: 11px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
-        border: 1px solid #00e1ff;
+        border: 1px solid #00a2ff;
         float: left;
         border-radius: 4px;
         background: 0 0;
@@ -142,25 +142,25 @@
         text-align: center;
         margin-right: 10px;
         &:hover {
-          background: #00e1ff;
-          color: #333;
+          background: #00a2ff;
+          color: white;
         }
       }
       button{
-        color: #00e1ff;
+        color: #00a2ff;
         font-size: 11px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
-        border: 1px solid #00e1ff;
+        border: 1px solid #00a2ff;
         float: left;
         border-radius: 4px;
         background: 0 0;
         text-transform: uppercase;
         text-align: center;
         &:hover {
-          background: #00e1ff;
-          color: #333;
+          background: #00a2ff;
+          color: white;
         }
       }
     }

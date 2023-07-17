@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-// import Loader from 'react-loaders'
-// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -18,7 +16,6 @@ const Contact = () => {
   
   const [letterClass, setLetterClass] = useState('text-animate')
   const [openForm, setOpenForm] = useState(false);
-  // const form = useRef()
 
   useEffect(() => {
      setTimeout(() => {
@@ -26,21 +23,6 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault()
-
-  //   emailjs
-  //     .sendForm('service_ridtmf8', 'template_b7r8ozj', form.current, 'ufoXBbzzKRbp_MTeY')
-  //     .then(
-  //       () => {
-  //         alert('Message successfully sent!')
-  //         window.location.reload(false)
-  //       },
-  //       () => {
-  //         alert('Failed to send the message, please try again')
-  //       }
-  //     )
-  // }
 
   return (
     <>
