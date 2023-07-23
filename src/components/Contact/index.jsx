@@ -39,7 +39,7 @@ const Contact = () => {
           </h1>
           <p>
             I am looking for software engineering positions. If you want to get in contact with me or have any requests or
-            questions, don't hesitate to contact me using the form underneath.
+            questions, please don't hesitate to contact me.
           </p>
           </div>
           <div className='contact-icons'>
