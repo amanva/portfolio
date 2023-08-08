@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Work from '../../assets/images/person.png'
 import Soft from '../../assets/images/soft.svg'
-import Sport from '../../assets/images/sports-tools.jpg'
+import desk from '../../assets/images/desktop.jpg'
 // import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -27,7 +27,7 @@ const About = () => {
           <img className = "soft-svg"src={Soft} alt="text" />
           </span>
           <img className = "avatar"src = {Work} alt = "pers"/>
-          <img src={Sport} className="sport" />
+          <img src={desk} className="sport" />
           
         </div>
          <div className="text-zone">
@@ -42,9 +42,10 @@ const About = () => {
           Hey there, I'm Aman Vahora and a recent University of Washington graduate. I do many activites in my free time such
           as playing videos games or connecting with nature. I also play various sports to get the adrenaline pumping.
           </p>
+          <br />
           <p align="LEFT">
           I love learning new skills and can quickly pick up new things. I also love tackling interesting problems and figuring out how to solve them. 
-          I've always been passionate when it has come to programming and I have built many different projects ranging from javascript games to websites.
+          I've always been passionate when it has come to programming and I have built many different projects ranging from Java/Javascript games to websites.
           </p>
           <p>
             

@@ -13,10 +13,11 @@
       color: Black;
       font-size: 30px;
       margin-bottom: 5rem;
+      text-align: center;
     }
     p {
       color: Black;
-      font-size: 15px;
+      font-size: 17px;
       font-family: "Coolvetica";
     }
     // @media (max-width: 1020px) {
@@ -54,7 +55,7 @@
       width: 50rem;
       height: 41rem;
       margin-right: 8rem;
-      border-radius: 50%;
+      border-radius: 10%;
       
     }
     @media (max-width: 1020px) {
@@ -73,6 +74,7 @@
           transform: rotate(360deg);
         }
       }
+      
     }
     .avatar {
       position: absolute;
