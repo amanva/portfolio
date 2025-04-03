@@ -2,6 +2,7 @@ import Adder from '../Adder'
 import {Adder2} from '../Adder'
 import frage from '../../assets/images/frage.png'
 import animal from '../../assets/images/animal.jpg'
+import ghg from '../../assets/images/GHG.jpg'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -49,6 +50,13 @@ function Projects() {
                 git = "https://github.com/amanva/Trivia_Maze_Game"
                 web = "https://github.com/amanva/Trivia_Maze_Game"
                 imgLink = {animal}
+                />
+                <Adder2 
+                title="Gear-Head-Garage"
+                desc="A full stack eccommerce website for automotive parts where users can engage with a interactive website along with ask questions to the chatbot."
+                git = "https://github.com/amanva/Parts_store"
+                web = "https://parts-store-rxs2.vercel.app/"
+                imgLink = {ghg}
                 />
               </div>
             </div>
